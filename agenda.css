@@ -1,0 +1,192 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* iPhone 14 */
+@media screen and (min-width: 390px) {
+    .container{
+        width: 100%;
+        max-width: 357px;
+        margin: 0 auto;
+    }
+
+    body{
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background: linear-gradient(179.65deg, #90BBCF 0.3%, #1C5E8D 148.62%);
+    }
+
+    .intro__container{
+        padding-top: 138px;
+    }
+
+    .intro__title, .intro__time{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 39px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    /* Current Schedule */
+    .current-schedule{
+        width: 100%; 
+    }
+
+
+    .current-schedule__block {
+        margin-top: 20px;
+        border-radius: 15px;
+        background: rgba(0, 0, 0, 0.20);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .current-schedule-block__info-box{
+        padding: 22px 11px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info-box__time{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .closer{
+        margin-left: -50px;
+    }
+
+    .info-box__info{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .small{
+        font-size: 10px;
+    }
+
+    .current-schedule-block__info-box::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 334px;
+        height: 0.4px;
+        background-color: #fff;
+        margin: 80px auto 0 auto;
+        opacity: 0.3; 
+    }
+
+    .current-schedule-block__info-box:last-child::before{
+        display: none;
+    }
+}
+
+/* iPhone 14 Plus */
+@media screen and (min-width: 428px) {
+
+    .container{
+        width: 100%;
+        max-width: 357px;
+        margin: 0 auto;
+    }
+
+    body{
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background: linear-gradient(179.65deg, #90BBCF 0.3%, #1C5E8D 148.62%);
+    }
+
+    .intro__container{
+        padding-top: 138px;
+    }
+
+    .intro__title, .intro__time{
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 39px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    /* Current Schedule */
+    .current-schedule{
+        width: 100%; 
+    }
+
+
+    .current-schedule__block {
+        margin-top: 20px;
+        border-radius: 15px;
+        background: rgba(0, 0, 0, 0.20);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .current-schedule-block__info-box{
+        padding: 22px 11px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info-box__time{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .closer{
+        margin-left: -50px;
+    }
+
+    .info-box__info{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .small{
+        font-size: 10px;
+    }
+
+    .current-schedule-block__info-box::before {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 334px;
+        height: 0.4px;
+        background-color: #fff;
+        margin: 80px auto 0 auto;
+        opacity: 0.3; 
+    }
+
+    .current-schedule-block__info-box:last-child::before{
+        display: none;
+    }
+   
+}
