@@ -107,7 +107,7 @@
     }
 
     body{
-        height: 100vh;
+        height: 115vh;
         background-repeat: no-repeat;
         background-size: cover;
         background: linear-gradient(179.65deg, #90BBCF 0.3%, #1C5E8D 148.62%);
@@ -128,7 +128,7 @@
         color: #FFFFFF;
     }
 
-    /* Current Schedule */
+    /* !Current Schedule */
     .current-schedule{
         width: 100%; 
     }
@@ -142,10 +142,11 @@
     }
 
     .current-schedule-block__info-box{
-        padding: 22px 11px;
-        display: flex;
         justify-content: space-between;
         align-items: center;
+
+        display: grid;
+        grid-template-columns: repeat(3, min(127px));
     }
 
     .info-box__time{
@@ -157,9 +158,6 @@
         line-height: normal;
     }
 
-    .closer{
-        margin-left: -50px;
-    }
 
     .info-box__info{
         color: #FFF;
@@ -179,14 +177,89 @@
         display: block;
         content: "";
         width: 334px;
-        height: 0.4px;
+        height: 0,4px;
         background-color: #fff;
         margin: 80px auto 0 auto;
-        opacity: 0.3; 
+        opacity: 0.4; 
     }
 
     .current-schedule-block__info-box:last-child::before{
         display: none;
     }
-   
+
+    /* !Week schedule */
+    .weekies__box{
+        padding: 23px 30px;
+        border-radius: 15px;
+        background: rgba(0, 0, 0, 0.20);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+
+        margin-top: 20px;
+    }
+
+    .week-text{
+        display: flex;
+        margin: 0 -20px;
+    }
+
+    .week-text::before{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 334px;
+        height:0.4px;
+        opacity: 0.4;
+        background-color: #fff;
+
+        margin-top: 30px;
+    }
+
+    .week-text p{
+        color: #FFF;
+        font-family: Ubuntu;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+
+        margin-left: 3px;
+    }
+
+    .weekies__infoline{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin: 20px -20px;
+    }
+
+    .weekies-infoline__text{
+        color: #FFF;
+        font-family: Ubuntu;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        width: 150px;
+    }
+
+    .large{
+        font-size: 22px;
+    }
+
+    .weekies__infoline::before{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 334px;
+        height:0.4px;
+        opacity: 0.4;
+        background-color: #fff;
+
+        margin-top: 40px;
+    }
+
+
 }
