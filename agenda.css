@@ -106,7 +106,6 @@
         margin: 0 auto;
     }
 
-    
     body{
         height: 125vh;
         background-repeat: no-repeat;
@@ -146,8 +145,8 @@
         justify-content: space-between;
         align-items: center;
 
-        display: grid;
-        grid-template-columns: repeat(3, min(127px));
+        /* display: grid;
+        grid-template-columns: repeat(3, min(127px)); */
     }
 
     .info-box__time{
