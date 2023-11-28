@@ -1,3 +1,20 @@
+const lessonLine = document.getElementById('lessonline');
+const floatPopUp = document.getElementById('float');
+const closeBtn = document.getElementById('close-btn');
+
+lessonLine.addEventListener('click', () => {
+    floatPopUp.classList.add('active');
+})
+
+closeBtn.addEventListener('click', () => {
+    floatPopUp.classList.remove('active');
+})
+
+
+
+
+
+
 //Current day display in intro section
 function getCurrentDate() {
     const now = new Date();
@@ -12,6 +29,8 @@ function getCurrentDate() {
 const currentDateElement = document.getElementById("currentDate");
 currentDateElement.textContent = getCurrentDate();
 //
+
+
 
 
 

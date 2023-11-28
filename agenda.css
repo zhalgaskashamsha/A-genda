@@ -107,15 +107,12 @@
     }
 
     body{
-        height: 125vh;
+        height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
         background: linear-gradient(179.65deg, #90BBCF 0.3%, #1C5E8D 148.62%);
     }
 
-    .intro__container{
-        padding-top: 138px;
-    }
 
     .intro__title, .intro__time{
         font-family: 'Ubuntu';
@@ -260,6 +257,103 @@
 
         margin-top: 40px;
     }
+
+    /* !Float pop up */
+    .float{
+        position: relative;
+    }
+
+    .float__inner{
+        position: absolute;
+        bottom: -100%;
+        z-index: 100;
+        padding: 30px 30px  30px 30px;
+        border-radius: 15px 15px 0px 0px;
+        background: rgba(144, 187, 207, 0.718);
+        backdrop-filter: blur(40px);
+        display: none;
+        transition: all .3s ease-in-out;
+    }
+
+    .float__inner.active{
+        display: block;
+        bottom: 0;
+    }
+
+    .close-btn{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+
+    .float__title-box::after{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 374px;
+        height:1px;
+        opacity: 0.4;
+        background-color: #fff;
+    }
+
+    .close-btn{
+        aspect-ratio: 1;
+        width: 29px;
+    }
+
+    .title-box__title{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .float__subtitle-box{
+        margin: 30px 0;
+    }
+
+    .float__subtitle-box::after{
+        position: absolute;
+        content: "";
+        display: block;
+        width: 374px;
+        height:1px;
+        opacity: 0.4;
+        background-color: #fff;
+        margin-top: 15px;
+    }
+
+    .float__subtitle-box:last-child::after{
+        display: none;
+    }
+
+    .subtitle-box__subtitle{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .subtitle-box__subtext{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+
+
+
+
+
+
 
 
 }
